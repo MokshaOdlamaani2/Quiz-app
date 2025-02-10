@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of C++ Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #e9ebce;
+            color: #333;
+        }
+        h1, h2 {
+            color: #5c63a1;
+        }
+        h1 {
+            text-align: center;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            display: inline-block;
+            text-align: center;
+            background-color: #5c63a1;
+            color: #fff;
+            padding: 5px 5px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-decoration: none;  /* Remove the underline */
+            transition: background-color 0.3s;
+            width: 150px ;
+        }
+        a:hover {
+            background-color: #4a4f7c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quick Revision of C++ Language</h1>
+
+    <h2>1. Key Features of C++</h2>
+    <ul>
+        <li>Object-Oriented: Supports classes, objects, inheritance, polymorphism, and encapsulation.</li>
+        <li>STL (Standard Template Library): Provides data structures like vectors, lists, queues, etc.</li>
+        <li>Low-Level Access: Similar to C, allows direct access to memory using pointers.</li>
+        <li>Overloading: Supports function and operator overloading.</li>
+        <li>Portability: C++ programs can be executed on multiple platforms with minimal changes.</li>
+    </ul>
+
+    <h2>2. Basic Structure of a C++ Program</h2>
+    <pre>
+#include &lt;iostream&gt;  // Library for input/output functions
+
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;  // Print message
+    return 0;  // Exit the program
+}
+    </pre>
+
+    <h2>3. Data Types</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Example Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>int</td>
+                <td>4 bytes</td>
+                <td>-2147483648 to 2147483647</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>4 bytes</td>
+                <td>3.4E-38 to 3.4E+38</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>8 bytes</td>
+                <td>1.7E-308 to 1.7E+308</td>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>1 byte</td>
+                <td>'A', 'z', '@'</td>
+            </tr>
+            <tr>
+                <td>void</td>
+                <td>N/A</td>
+                <td>Used for functions with no return value</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Variables and Constants</h2>
+    <pre>
+// Variable Example
+int age = 25;
+float price = 99.99;
+char grade = 'A';
+
+// Constant Example
+#define PI 3.14
+const int MAX = 100;
+    </pre>
+
+    <h2>5. Control Statements</h2>
+    <h3>Conditional Statements</h3>
+    <pre>
+if (condition) {
+    // Code block
+} else if (condition) {
+    // Code block
+} else {
+    // Code block
+}
+    </pre>
+    <h3>Loops</h3>
+    <pre>
+// For Loop
+for (int i = 0; i < 5; i++) {
+    cout << i << endl;
+}
+
+// While Loop
+int i = 0;
+while (i < 5) {
+    cout << i << endl;
+    i++;
+}
+
+// Do-While Loop
+int i = 0;
+do {
+    cout << i << endl;
+    i++;
+} while (i < 5);
+    </pre>
+
+    <h2>6. Functions</h2>
+    <pre>
+#include &lt;iostream&gt;
+
+int add(int a, int b) {  // Function definition
+    return a + b;
+}
+
+int main() {
+    int sum = add(5, 10);  // Function call
+    cout << "Sum: " << sum << endl;
+    return 0;
+}
+    </pre>
+
+    <h2>7. Arrays and Strings</h2>
+    <pre>
+// Arrays
+int numbers[5] = {1, 2, 3, 4, 5};
+
+// Strings
+string name = "Alice";
+    </pre>
+
+    <h2>8. Pointers</h2>
+    <pre>
+int a = 10;
+int *p = &a;  // Pointer to a
+cout << "Value of a: " << *p << endl;  // Dereferencing
+    </pre>
+
+    <h2>9. File Handling</h2>
+    <pre>
+#include &lt;fstream&gt;
+ofstream file("data.txt");
+file << "Hello, File!";
+file.close();
+    </pre>
+
+    <h2>10. Key Concepts to Master</h2>
+    <ul>
+        <li>Memory Management: <code>new</code>, <code>delete</code></li>
+        <li>Recursion: Functions calling themselves.</li>
+        <li>Overloading: Function overloading and operator overloading.</li>
+        <li>Inheritance and Polymorphism: Concepts of Object-Oriented Programming (OOP).</li>
+        <li>Templates: Function templates, class templates for code reuse.</li>
+    </ul>
+
+    <h2>11. Tools for Learning C++</h2>
+    <ul>
+        <li>Compilers: GCC, Clang, MinGW.</li>
+        <li>IDEs: Visual Studio, Code::Blocks, CLion, Dev-C++.</li>
+        <li>Online Platforms: W3Schools, TutorialsPoint, GeeksforGeeks.</li>
+    </ul>
+    
+    <h1 style="color: #262a52;">Test</h1>
+    <h2>Rules</h2>
+    <p>1.Revise all the Concepts</p>
+    <p>2.Test has <b>5 questions</b>. Results will display after test</p>
+    <p>3.No negative scoring</p>
+    <p>4.Click on <b>Start Test</b> below</p>
+    <a href="cpptest.html">Start Test</a>
+</body>
+</html>

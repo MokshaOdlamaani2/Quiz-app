@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Java Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #e9ebce;
+            color: #333;
+        }
+        h1, h2 {
+            color: #5c63a1;
+        }
+        h1 {
+            text-align: center;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            display: inline-block;
+            text-align: center;
+            background-color: #5c63a1;
+            color: #fff;
+            padding: 5px 5px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-decoration: none;  /* Remove the underline */
+            transition: background-color 0.3s;
+            width: 150px ;
+        }
+        a:hover {
+            background-color: #4a4f7c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quick Revision of Java Language</h1>
+
+    <h2>1. Key Features of Java</h2>
+    <ul>
+        <li>Object-Oriented: Java follows Object-Oriented Programming principles.</li>
+        <li>Platform-Independent: Java programs can run on any device with a JVM.</li>
+        <li>Memory Management: Automatic garbage collection.</li>
+        <li>Multithreading: Java provides built-in support for multithreaded programming.</li>
+        <li>Security: Java provides a secure environment with features like bytecode verification.</li>
+    </ul>
+
+    <h2>2. Basic Structure of a Java Program</h2>
+    <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");  // Print message
+    }
+}
+    </pre>
+
+    <h2>3. Data Types</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Example Values</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>int</td>
+                <td>4 bytes</td>
+                <td>-2147483648 to 2147483647</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>4 bytes</td>
+                <td>3.4E-38 to 3.4E+38</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>8 bytes</td>
+                <td>1.7E-308 to 1.7E+308</td>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>2 bytes</td>
+                <td>'A', 'z', '@'</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>1 byte</td>
+                <td>true, false</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Variables and Constants</h2>
+    <pre>
+// Variable Example
+int age = 25;
+float price = 99.99f;
+char grade = 'A';
+
+// Constant Example
+final double PI = 3.14;
+    </pre>
+
+    <h2>5. Control Statements</h2>
+    <h3>Conditional Statements</h3>
+    <pre>
+if (condition) {
+    // Code block
+} else if (condition) {
+    // Code block
+} else {
+    // Code block
+}
+    </pre>
+    <h3>Loops</h3>
+    <pre>
+// For Loop
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+// While Loop
+int i = 0;
+while (i < 5) {
+    System.out.println(i);
+    i++;
+}
+    </pre>
+
+    <h2>6. Functions</h2>
+    <pre>
+public class Main {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int sum = add(5, 10);  // Function call
+        System.out.println("Sum: " + sum);
+    }
+}
+    </pre>
+
+    <h2>7. Arrays and Strings</h2>
+    <pre>
+// Arrays
+int[] numbers = {1, 2, 3, 4, 5};
+
+// Strings
+String name = "Alice";
+    </pre>
+
+    <h2>8. File Handling</h2>
+    <pre>
+import java.io.FileWriter;
+import java.io.IOException;
+
+FileWriter writer = new FileWriter("data.txt");
+writer.write("Hello, File!");
+writer.close();
+    </pre>
+
+    <h2>9. Key Concepts to Master</h2>
+    <ul>
+        <li>Exception Handling: try, catch, finally blocks.</li>
+        <li>Collections Framework: List, Set, Map.</li>
+        <li>Multithreading: Creating threads and synchronization.</li>
+        <li>Object-Oriented Programming: Inheritance, Polymorphism, Encapsulation.</li>
+    </ul>
+
+    <h2>10. Tools for Learning Java</h2>
+    <ul>
+        <li>Compilers: OpenJDK, Oracle JDK.</li>
+        <li>IDEs: Eclipse, IntelliJ IDEA, NetBeans.</li>
+        <li>Online Platforms: W3Schools, TutorialsPoint, Oracle Docs.</li>
+    </ul>
+
+    <h1 style="color: #262a52;">Test</h1>
+    <h2>Rules</h2>
+    <p>1. Revise all the Concepts</p>
+    <p>2. Test has <b>5 questions</b>. Results will display after test</p>
+    <p>3. No negative scoring</p>
+    <p>4. Click on <b>Start Test</b> below</p>
+    <a href="javatest.html">Start Test</a>
+</body>
+</html>

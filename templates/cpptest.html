@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #e9ebce;
+            color: #333;
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;    /* Centers vertically */
+            /* height: 100vh; Remove this line */
+        }
+        
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    color: #5c63a1;
+}
+
+/* Quiz Container Styling */
+#quiz-container {
+    margin-top: 5%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    min-height: 400px;
+    max-height: 100%;
+    font-size: 20px;
+}
+
+/* Question Styling */
+#question {
+    margin-top: 30px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Options Styling */
+#options {
+    margin-bottom: 30px;
+}
+
+#options div {
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #5c63a1;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 5px 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4a4f7c;
+}
+a {
+    display: inline-block;
+    text-align: center;
+    background-color: #5c63a1;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;  /* Remove the underline */
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+a:hover {
+    background-color: #4a4f7c;
+}
+    </style>
+</head>
+<body>
+
+    <div id="quiz-container" class="question-container">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button class="btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+    
+    
+    <script src="cppquiz.js"></script>
+</body>
+</html>
